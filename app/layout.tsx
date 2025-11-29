@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "react-toastify/dist/ReactToastify.css";
 import localFont from "next/font/local";
 import { ReactNode } from "react";
+import { ToastContainer } from "react-toastify";
 
 const ibmPlexSans = localFont({
   src: [
@@ -33,6 +35,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         className={`${ibmPlexSans.className} ${bebasNeue.variable} antialiased`}
       >
         {children}
+        <ToastContainer />
       </body>
     </html>
   );

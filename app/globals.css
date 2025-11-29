@@ -29,6 +29,33 @@
 }
 
 @layer components {
+  .Toastify__toast {
+    @apply !bg-dark-300 !text-white !rounded-md;
+  }
+
+  .Toastify__toast--success {
+    @apply !bg-dark-300;
+  }
+
+  .Toastify__toast--error {
+    @apply !bg-dark-300;
+  }
+
+  .Toastify__toast--info {
+    @apply !bg-dark-300;
+  }
+
+  .Toastify__toast--warning {
+    @apply !bg-dark-300;
+  }
+
+  .Toastify__progress-bar {
+    @apply !bg-primary;
+  }
+
+  .Toastify__close-button {
+    @apply !text-light-100;
+  }
   .form-btn {
     @apply bg-primary text-dark-100 hover:bg-primary inline-flex min-h-14 w-full items-center justify-center rounded-md px-6 py-2 font-bold text-base;
   }
